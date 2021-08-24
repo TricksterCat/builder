@@ -10,7 +10,7 @@ jobs:
   parameters:
     package: 'Conda'
     spec: 'CUDA'
-    msagent: false
+    msagent: true
 
 - template: templates/build_task.yml
   parameters:
@@ -22,7 +22,7 @@ jobs:
   parameters:
     package: 'Conda'
     spec: 'CPU'
-    msagent: false
+    msagent: true
 
 - template: templates/build_task.yml
   parameters:
