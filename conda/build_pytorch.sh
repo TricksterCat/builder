@@ -71,6 +71,7 @@ if [[ -n "$CROSS_COMPILE_ARM64" ]]; then
     build_version="$build_version.arm64"
 fi
 
+export BUILD_SHARED_LIBS=OFF
 export PYTORCH_BUILD_VERSION=$build_version
 export PYTORCH_BUILD_NUMBER=$build_number
 
